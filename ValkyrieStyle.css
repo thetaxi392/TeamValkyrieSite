@@ -1,0 +1,529 @@
+@charset "utf-8";
+
+* {
+  box-sizing: border-box;	
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+	max-width: 1400px;
+	margin: auto;
+	background-color: black;
+}
+
+/* --------------------------Style the header------------------------------ */
+
+@font-face {
+	src: url(lucida_calligraphy_italic.ttf);
+	font-family: LucidaC;
+}
+
+@font-face {
+	src: url(Merienda-Regular.ttf);
+	font-family: Merienda;
+}
+
+.header {
+	background-color: #C5b358;
+	border-radius: 0px 0px 10px 10px;
+	text-align: center;
+	font-size: 48px;
+	font-family: LucidaC;
+	color: #925aa6;
+	-webkit-text-stroke-width: 0.2px;
+	-webkit-text-stroke-color: black;
+}
+
+.header h1{
+	margin: 0;
+}
+
+.homeheader img {
+  width: 100%;
+  height: auto;
+  border-radius: 0px 0px 10px 10px;
+}
+
+/* ----------------------Top Navigation Bar + Responsive Drop-down--------------------*/
+
+
+
+.topnav {
+  overflow: hidden;
+  background-color: #000000;
+}
+
+.topnav a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 10px 12px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: Merienda;
+}
+
+.active {
+  background-color: #925aa6;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 17px;    
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: #925aa6;
+  color: white;
+}
+
+.dropdown-content a:hover {
+  background-color: #925aa6;
+  color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/*------------------------Search Bar-------------------*/
+
+
+
+/* -------------------------Container for flexboxes------------------------- */
+.mainrow {
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* All Columns */
+.column {
+	padding: 10px;
+}
+
+/*----- Right column (Social Media)----- */
+.column.right {
+   -webkit-flex: 1;
+   -ms-flex: 1;
+   flex: 1;
+   text-align: center;
+   font-family: Merienda;
+	background-color: #EFEFEF;
+	border-radius: 10px;
+}
+
+.column.right h1 {
+	margin: 0;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 100px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Instagram */
+.fa-instagram {
+  background: #E12A2A;
+  color: white;
+}
+
+/*----- Main column container-----*/
+.column.main {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  border-radius: 10px;
+  background-color: #dddddd
+}
+
+.column.main .banner-text {
+	font-family: Merienda;
+	text-align: center;
+	color: #925aa6;
+	font-size: 40px;
+}
+
+.column.main .subhead-text {
+	font-family: Merienda;
+	text-align: left;
+	color: #925aa6;
+	font-size: 30px;
+}
+
+.column.main .small-text {
+    font-size: 17px;
+    font-family: Merienda;
+}
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+
+/*---------------Homepage slideshow--------------*/
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+#slide-first-element {
+ display: block;
+ width: 100%;
+ height: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Darken the prev/next buttons on hover */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text for homepage gallery*/
+.homepictext {
+  color: white;
+  font-size: 30px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  font-family: LucidaC;
+}
+
+/* The dots/bullets/indicators for homepage gallery */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #925aa6;
+}
+
+/* Fading animation for homepage gallery transition */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.0s;
+  animation-name: fade;
+  animation-duration: 1.0s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/*-------------------Contact Form-----------------------*/
+
+
+.contactform {
+	width: 90%;
+	max-width: 500px;
+	margin: 0 auto;
+	padding: 20px;
+	box-shadow: 0px 0px 20px #925aa630;
+	background-color: #925aa630;
+	border-radius: 10px;
+	margin-bottom: 20px;
+	
+}
+
+.formgroup {
+	font-family: Merienda;
+	display: flex;
+	align-items: left;
+	justify-content: center;
+	margin-top: 20px;
+	flex-direction: column;
+}
+
+.formgroup input, 
+.formgroup textarea {
+	width: 100%;
+	padding: 5px;
+	font-size: 16px;
+	border: 2px solid #C5B35860;
+	margin-top: 5px;
+}
+
+textarea {
+	resize: vertical;
+}
+
+.submitbutton {
+	width: 100%;
+	border: none;
+	outline: none;
+	padding: 12px;
+	margin-top: 16px;
+	font-size: 20px;
+	border-radius: 10px;
+	font-family: Merienda;
+	cursor: pointer;
+}
+
+.submitbutton:hover {
+	background-color: #C5B35890;
+	transition: .3s ease background-color;
+}
+
+#status {
+	width: 90%;
+	max-width: 500px;
+	text-align: center;
+	padding: 10px;
+	margin: 0 auto;
+	border-radius: 10px;
+	font-family: Merienda;
+	font-size: 26px;
+}
+
+#status.success {
+	background-color: #47A04675;
+	animation: status 4s ease forwards;
+}
+
+#status.error {
+	background-color: #E0131675;
+	color: #FFFFFF;
+	animation: status 4s ease forwards;
+}
+
+@keyframes status {
+	0% {
+		opacity: 1;
+		pointer-events: all;
+	}
+	
+	90% {
+		opacity: 1;
+		pointer-events: all;
+	}
+	
+	100% {
+		opacity: 1;
+		pointer-events: none;
+	}
+}
+
+/*-------------------------Events Table-----------------------------*/
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+	height: auto;
+	border-radius: 10px;
+	position: flex;
+}
+
+th { 
+	text-align: left;
+	padding-bottom: 10px;
+	padding-left: 5px;
+	font-size: 20px;
+}
+
+td {
+	text-align: left;
+	padding: 12px;
+}
+
+tr:nth-child(even) {
+	background-color: #88888850;
+}
+
+/*-----------------------------------Practice Map--------------------------------*/
+
+
+.practicemap {
+	position: flex;
+	align: center;
+	width: 100%;
+	height: auto;
+}
+
+
+
+/* --------------------------------------Footer------------------------------------- */
+.footer {
+	background-color: #C5B358;
+  border-radius: 10px 10px 0px 0px;
+  padding: 10px;
+  font-size: 20px;
+	text-decoration: none;
+}
+
+.footer-sitemap {
+	list-style-type: none;
+	margin-left: 80px;
+	padding: 10px;
+	-webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+	text-decoration: none;
+}
+
+.footer-sitemap li a {
+	font-family: Merienda;
+	text-decoration: none;
+	color: #925aa6;
+}
+
+.footer-sitemap li a:visited {
+	color: #925aa6;
+	text-decoration: none;
+}
+
+.footer-legal {
+	text-align: right;
+	font-size: 14px;
+	-webkit-flex: 2;
+    -ms-flex: 2;
+    flex: 2;
+}
+
+/* ----------------------------Responsive layout - Columns ---------------------------*/
+@media (max-width: 767px) {
+  .mainrow {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+  .header {
+		font-size: 30px;
+  }
+	
+	.coachtext {
+		font-size: 14px;
+	}
+	
+	.footer {
+		font-size: 12px;
+	}
+	
+	.footer-legal {
+		font-size: 10px;
+	}
+}
+
+/* Responsive Layout - Navigation Bar */
+
+@media screen and (max-width: 767px) {
+	.topnav a, .dropdown .dropbtn {
+		display: none;
+		float: right;
+	}
+	.topnav a.icon {
+		float: right;
+		display: block;
+	}
+	.topnav.responsive {
+		position: relative;
+	}
+	.topnav.responsive .icon {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	.topnav.responsive a {
+		float: none;
+		display: block;
+		text-align: center;
+	}
+	.topnav.responsive .dropdown {
+		float: none;
+	}
+	.topnav.responsive .dropdown-content {
+		position: relative;
+	}
+	.topnav.responsive .dropdown .dropbtn {
+		display: block;
+		width: 100%;
+		text-align: left;
+	}
+	
+	
+}
+

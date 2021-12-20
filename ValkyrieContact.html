@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Valkyrie Contacts</title>
+	<link rel="stylesheet" href="ValkyrieStyle.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="ValkyrieScript.js"></script>
+	
+</head>
+
+<body>
+
+	
+<!--Navigation Bar-->
+	
+	<div class="topnav" id="myTopnav">
+	  	<a href="ValkyrieHomepage.html">Home</a>
+		<a href="ValkyrieContact.html" class="active">Contact</a>
+		<a href="ValkyrieStaff.html">Coaching Staff</a>
+	  	<a href="ValkyrieEvents.html">Events</a>
+	  	<a href="ValkyrieTestimonials.html">Testimonials</a>
+		<a href="ValkyrieBlog.html">Blog</a>
+		<a href="ValkyriePractice.html">Practice</a>
+			
+
+<!--Dropdown Button-->
+	  	<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="dropDown()">&#9776;</a>
+	</div>
+
+	
+<!--Header-->
+	<header class="header">
+		<h1>Team Valkyrie</h1>
+	</header>
+	
+	
+<!--Main-->
+	<main class="mainrow">
+		
+<!--Main Content Subsection-->
+  		<div class="column main">
+			<h1 class="banner-text">Contact us!</h1>
+<!--Form Element-->
+		<form class="contactform" action="/" method="GET">
+			<div class="formgroup">
+				<label for="name">First name:</label>
+				<input type="text" id="name" name="name">
+			</div>
+			
+			<div class="formgroup">
+				<label for="email">Email:</label>
+				<input type="text" id="email" name="email">
+			</div>
+			
+			<div class="formgroup">
+				<label for="purpose">What's up? (Reason for contact):</label>
+				<input type="text" id="purpose" name="purpose">
+			</div>
+	  
+			<div class="formgroup">
+				<label for="message">Message:</label>
+				<textarea name="message" id="message" rows="10" cols="60"></textarea>
+			</div>
+			
+			<input class="submitbutton" id="submitbutton" type="submit" value="Submit" onclick="disableButton()">
+		</form>
+		
+			<div id="status" class="success">Thank you for reaching out!</div>
+
+		</div>
+		
+<!--Social Media Area--->
+  		<div class="column right">
+			<h1>Follow Us!</h1>
+			<a href="https://www.facebook.com/TeamValkyriestl" target="_blank" class="fa fa-facebook"></a>
+			<a href="https://www.instagram.com/teamvalkyriegirlswrestling" target="_blank" class="fa fa-instagram"></a>
+		</div>
+	</main>
+
+	
+<!--Footer-->
+	<div class="footer">
+  		<div>
+			<ul class="footer-sitemap">
+				<li><a href="ValkyrieHomepage.html">Home</a></li>
+				<li><a href="ValkyrieContact.html">Contact</a></li>
+				<li><a href="ValkyrieStaff.html">Coaching Staff</a></li>
+				<li><a href="ValkyrieStore.html">Store</a></li>
+				<li><a href="ValkyrieEvents.html">Events</a></li>
+	  			<li><a href="ValkyrieTestimonials.html">Testimonials</a></li>
+				<li><a href="ValkyrieBlog.html">Blog</a></li>
+				<li><a href="ValkyriePractice.html">Practice</a></li>
+			</ul>
+		</div>
+		<div class="footer-legal">
+			<p>Team Valkyrie is a 501(c)(3) Non-Profit Organization All Rights Reserved <span>&copy;2021</span></p>
+			<p>Contact Us <a href="ValkyrieContact.html">Here</a></p>
+		</div>
+	</div>
+	
+	
+</body>
+</html>
+
