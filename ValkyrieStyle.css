@@ -209,6 +209,10 @@ body {
   margin: auto;
 }
 
+.column.main .blogtext {
+    font-size: 14px;
+    font-family: Merienda;
+}
 
 /*---------------Homepage slideshow--------------*/
 
