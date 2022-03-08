@@ -199,20 +199,24 @@ body {
 	font-size: 30px;
 }
 
+.column.main .blogtext {
+    font-size: 14px;
+    font-family: Merienda;
+}
+
 .column.main .small-text {
     font-size: 17px;
     font-family: Merienda;
 }
+
+
 .slideshow-container {
   max-width: 1000px;
   position: relative;
   margin: auto;
 }
 
-.column.main .blogtext {
-    font-size: 14px;
-    font-family: Merienda;
-}
+
 
 /*---------------Homepage slideshow--------------*/
 
